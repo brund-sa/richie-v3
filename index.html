@@ -45,10 +45,14 @@ locations in Saudi.
 <meta name="twitter:image:alt" content="Richie IDD | Creative Architectural firm in Saudi Arabia" />
 
 <title>Richie IDD | Creative Architectural firm in Saudi Arabia</title>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
 <!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" drefer>
+<link href="css/style.css" rel="stylesheet" drefer>
+<link href="css/responsive.css" rel="stylesheet" drefer>
 <!-- Slider -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -101,8 +105,8 @@ locations in Saudi.
                             <ul class="navigation clearfix">
                                 <li class="current"><a href="#">Home</a></li>
                                 <li><a href="#about">About us</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#project">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -222,7 +226,7 @@ locations in Saudi.
     	<div class="auto-container">
         	<!--Heading-->
         	<div class="title-box">
-                <h3 class="subtitle">About us</h3>
+                <h3 class="subtitle wow fadeInUp">About us</h3>
                 <h2>Strategic Thinking. Flawless Execution. <br>Sustainable Solutions.</h2>
             </div>
             
@@ -230,7 +234,7 @@ locations in Saudi.
             	<!--Text Column-->
                 <div class="text-column col-md-6 col-sm-6 col-xs-12">
                 	<div class="inner-box">
-                        <div class="text text-left wow fadeInUp" >RICHIE IDD is a dynamic, innovative, and one of the biggest and most influential architectural firms in Saudi Arabia. 
+                        <div class="text text-left wow fadeInUp" data-wow-delay=".2s">RICHIE IDD is a dynamic, innovative, and one of the biggest and most influential architectural firms in Saudi Arabia. 
 
                             Our painstaking attention to detail from the earliest concept stage right through to the completion of a project consistently provides our clients with projects and homes that exceed their expectations. 
                             
@@ -274,13 +278,13 @@ locations in Saudi.
                 <div class="auto-container">
                     <!--Heading-->
                     <div class="title-box">
-                        <h2>Our Partners</h2>
+                        <h2 class="wow fadeInUp">Our Partners</h2>
                     </div>
                     <ul class="sponsors-list clearfix">
-                        <li><a href="#"><img src="http://rakaztrading.com/img/logo/brund_logo_colored.png" alt=""></a></li>
-                        <li><a href="#"><img src="http://rakaztrading.com/img/logo/richieIDD_Logo_colored.png" alt=""></a></li>
-                        <li><a href="#"><img src="http://rakaztrading.com/img/logo/mec_Logo_colored.png" alt=""></a></li>
-                        <li><a href="#"><img src="http://rakaztrading.com/img/logo/msm_logo_colored.png" alt=""></a></li>
+                        <li><a href="http://rakaztrading.com/" target="_blank" class="wow fadeInUp" data-wow-delay=".2s"><img src="images/clients/partner3.png" alt="Rakaz Trading"></a></li>
+                        <li><a href="http://meuble-elchark.com/" target="_blank" class="wow fadeInUp" data-wow-delay=".3s"><img src="images/clients/partner1.png" alt="Meuble El Chark"></a></li>
+                        <li><a href="https://mystery-consult.com/" target="_blank" class="wow fadeInUp" data-wow-delay=".4s"><img src="images/clients/partner2.png" alt="Mystery Consulting"></a></li>
+                        <li><a href="https://brund.run/" target="_blank" class="wow fadeInUp" data-wow-delay=".5s"><img src="images/clients/partner4.png" alt="Brund.Run"></a></li>
                     </ul>
                 </div>
                 
@@ -289,14 +293,14 @@ locations in Saudi.
         </div>
     </section>
     
-    
+    <div id="project"></div>
     <!--Projects Section-->
-    <section class="projects-section">
+    <section class="projects-section wow fadeInUp">
         <div class="auto-container">
         	
             <!--Heading Title-->
             <div class="sec-title-one">
-            	<h3 class="subtitle">The Axeon</h3>
+            	<h3 class="subtitle">Featured Projects</h3>
                 <h2>Latest Projects</h2>
             </div>
             
@@ -307,9 +311,11 @@ locations in Saudi.
                     <ul class="filter-tabs filter-btns">
                         <li class="filter active" data-role="button" data-filter="all">All</li>
                         <li class="filter" data-role="button" data-filter=".commercial">commercial</li>
-                        <li class="filter" data-role="button" data-filter=".homes">homes</li>
-                        <li class="filter" data-role="button" data-filter=".exteriors">exteriors</li>
-                        <li class="filter" data-role="button" data-filter=".renovations">renovations</li>
+                        <li class="filter" data-role="button" data-filter=".homes">residetial</li>
+                        <li class="filter" data-role="button" data-filter=".exteriors">hospitality</li>
+                        <li class="filter" data-role="button" data-filter=".renovations">mix-used</li>
+                        <li class="filter" data-role="button" data-filter=".exteriors">sports</li>
+                        <li class="filter" data-role="button" data-filter=".renovations">healtcare</li>
                     </ul>
                 </div>
                 
@@ -410,107 +416,153 @@ locations in Saudi.
                             </div>
                         </div>
                     </div>
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all renovations">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gallery/1.jpg" alt=""></figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="overlay-content">
+                                            <h3><a href="portfolio-details.html">office desk</a></h3>
+                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Default Portfolio Item-->
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all commercial exteriors">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gallery/2.jpg" alt=""></figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="overlay-content">
+                                            <h3><a href="portfolio-details.html">office desk</a></h3>
+                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Default Portfolio Item-->
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all homes exteriors">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="images/gallery/3.jpg" alt=""></figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="overlay-content">
+                                            <h3><a href="portfolio-details.html">office desk</a></h3>
+                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+                <div class="viewMore__"><a href="">VIEW MORE</a></div>
         	</div>    
         </div>
     </section>
     
-    
-    <!--Testimonials One-->
-    <section class="testimonials-one">
-    	<div class="auto-container">
-        	
-            <!--Testimonials Carousel One-->
-            <div class="carousel-outer">
-            	
-                <div class="testimonial-carousel-one single-item-fade-carousel owl-theme owl-carousel">
-                	<!--Slide Item-->
-                    <div class="slide-item">
-                    	
-                        <div class="quotes-icon"><span class="flaticon-left-quote-1"></span></div>
-                        <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-                        
-                        <div class="info">
-                        	<div class="author-thumb img-circle"><img class="img-circle" src="images/resource/author-1.jpg" alt=""></div>
-                            <h4>Mexa Zamac</h4>
-                            <div class="designation">Our Client</div>
-                        </div>
-                        
-                    </div>
-                    
-                    <!--Slide Item-->
-                    <div class="slide-item">
-                    	
-                        <div class="quotes-icon"><span class="flaticon-left-quote-1"></span></div>
-                        <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation velit esse cillum dolore eu fugiat nulla pariatur ullamco laboris nisi ut aliquip dolor in reprehenderit in voluptate. </div>
-                        
-                        <div class="info">
-                        	<div class="author-thumb img-circle"><img class="img-circle" src="images/resource/author-2.jpg" alt=""></div>
-                            <h4>Masum Rana</h4>
-                            <div class="designation">Our Client</div>
-                        </div>
-                        
-                    </div>
-                    
-                    <!--Slide Item-->
-                    <div class="slide-item">
-                    	
-                        <div class="quotes-icon"><span class="flaticon-left-quote-1"></span></div>
-                        <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitationvelit esse cillum dolore eu fugiat nulla pariatur ullamco laboris nisi ut aliquip dolor in reprehenderit in voluptate . </div>
-                        
-                        <div class="info">
-                        	<div class="author-thumb img-circle"><img class="img-circle" src="images/resource/author-3.jpg" alt=""></div>
-                            <h4>Ahmad Madni</h4>
-                            <div class="designation">Our Client</div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </div>
-    </section>
-    
-    
     <!--News Section-->
-    <section class="news-section">
+    <section class="testimonials-one">
     	<div class="auto-container">
         	<div class="row clearfix">
             	
-                <!--News Style One-->
-                <div class="news-style-one col-md-6 col-sm-6 col-xs-12">
-                	<div class="inner-box">
-                    	<div class="post-meta">
-                        	<ul class="clearfix">
-                            	<li><a href="blog-details.html">kane Gore</a></li>
-                                <li><a href="blog-details.html">aug 25, 2017</a></li>
-                            </ul>
+                 <!--Testimonials Carousel One-->
+                <div class="carousel-outer">
+                    
+                    <div class="testimonial-carousel-one single-item-fade-carousel owl-theme owl-carousel">
+                        <!--Slide Item-->
+                        <div class="slide-item">
+                            
+                            <div class="quotes-icon"><span class="flaticon-left-quote-1"></span></div>
+                            <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                            
+                            <div class="info">
+                                <div class="author-thumb img-circle"><img class="img-circle" src="images/resource/author-1.jpg" alt=""></div>
+                                <h4>Mexa Zamac</h4>
+                                <div class="designation">Our Client</div>
+                            </div>
+                            
                         </div>
-                        <h2><a href="blog-details.html">Labore magna dolore aliqua sed</a></h2>
-                        <div class="text">Sempor incididunt ut labore et dolore magna aliqua uat enim sinim veniam quis nostrud exercitation ullamco laboris nisi uaet aliquip exa commodo duis aute consequat irure dolor.</div>
-                        <div class="more-link"><a href="blog-details.html">read more</a></div>
-                    </div>
-                </div>
-                
-                <!--News Style One-->
-                <div class="news-style-one col-md-6 col-sm-6 col-xs-12">
-                	<div class="inner-box">
-                    	<div class="post-meta">
-                        	<ul class="clearfix">
-                            	<li><a href="blog-details.html">kane Gore</a></li>
-                                <li><a href="blog-details.html">sep 23, 2017</a></li>
-                            </ul>
+                        
+                        <!--Slide Item-->
+                        <div class="slide-item">
+                            
+                            <div class="quotes-icon"><span class="flaticon-left-quote-1"></span></div>
+                            <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation velit esse cillum dolore eu fugiat nulla pariatur ullamco laboris nisi ut aliquip dolor in reprehenderit in voluptate. </div>
+                            
+                            <div class="info">
+                                <div class="author-thumb img-circle"><img class="img-circle" src="images/resource/author-2.jpg" alt=""></div>
+                                <h4>Masum Rana</h4>
+                                <div class="designation">Our Client</div>
+                            </div>
+                            
                         </div>
-                        <h2><a href="blog-details.html">Dolore magna aliqua enim veniam</a></h2>
-                        <div class="text">Sempor incididunt ut labore et dolore magna aliqua uat enim sinim veniam quis nostrud exercitation ullamco laboris nisi uaet aliquip exa commodo duis aute consequat irure dolor.</div>
-                        <div class="more-link"><a href="blog-details.html">read more</a></div>
+                        
+                        <!--Slide Item-->
+                        <div class="slide-item">
+                            
+                            <div class="quotes-icon"><span class="flaticon-left-quote-1"></span></div>
+                            <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitationvelit esse cillum dolore eu fugiat nulla pariatur ullamco laboris nisi ut aliquip dolor in reprehenderit in voluptate . </div>
+                            
+                            <div class="info">
+                                <div class="author-thumb img-circle"><img class="img-circle" src="images/resource/author-3.jpg" alt=""></div>
+                                <h4>Ahmad Madni</h4>
+                                <div class="designation">Our Client</div>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
-                </div>
+                    
+                </div>  
                 
             </div>
+        </div>
+    </section>
+    <div id="contact"></div>
+    <section class="contact-section">
+    	<div class="outer-container clearfix">
+        	
+            <!--Form Column-->
+            <div class="form-column">
+            	<div class="clearfix">
+                	<div class="inner">
+                    	<h2><strong style="color: #b78c34;">GET</strong> in Touch</h2>
+                        <!--Contact Us Form-->
+                        <div class="contact-us-form">
+                            <form method="post" action="sendemail.php" id="contact-form" novalidate="novalidate">
+                                <div class="form-group">
+                                    <input type="text" name="username" value="" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="theme-btn btn-style-three">send message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Map Column-->
+            <div class="map-column">
+            	<!--Map Canvas-->
+                <div id="map"></div>
+            </div>
+            
         </div>
     </section>
     
@@ -533,8 +585,8 @@ locations in Saudi.
                                             Design, Interior Architecture and Project
                                             Management services.</div>
                                     	<ul class="contact-info">
-                                        	<li>E . <a href="#"><strong>info@richieidd.com</strong></a></li>
-                                            <li>T . <a href="#"><strong>+966 545 488 488</strong></a></li>
+                                        	<li><span class="fa fa-envelope"></span> <a href="mailto:info@richieidd.com"><strong>info@richieidd.com</strong></a></li>
+                                            <li><span class="fa fa-phone"></span> <a href="tel:+966545488488"><strong>+966 545 488 488</strong></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -546,7 +598,7 @@ locations in Saudi.
                                     <h2>Quick Links</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="#">Home Pages</a></li>
+                                            <li><a href="#">Home</a></li>
                                             <li><a href="#">About Us</a></li>
                                             <li><a href="#">Our Works</a></li>
                                             <li><a href="#">Latest News</a></li>
@@ -583,16 +635,16 @@ locations in Saudi.
                                     <h2>You like our works?</h2>
                                     <div class="widget-content">
                                         <div class="text">Call us now, Let's turn your idea into reality.</div>
-                                        <a href="https://wa.me/966545488488" style="padding: 15px 25px; color: #fff; background: #b88c33;">CALL US NOW! <span class="fa fa-phone" aria-hidden="true"></span></a>
+                                        <a href="tel:+966545488488" class="call__">CALL US NOW! <span class="fa fa-phone" aria-hidden="true"></span></a>
                                         
                                         <!--Social Links-->
                                         <div class="social-links">
                                         	<ul class="clearfix">
-                                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                            	<li><a href="https://www.facebook.com/RichieIDD/"><span class="fa fa-facebook-f"></span></a></li>
+                                                <li><a href="https://www.instagram.com/richieidd/"><span class="fa fa-instagram"></span></a></li>
+                                                <li><a href="https://twitter.com/richieidd"><span class="fa fa-twitter"></span></a></li>
+                                                <li><a href="https://www.snapchat.com/add/richieidd"><span class="fa fa-snapchat"></span></a></li>
+                                                <li><a href="https://wa.me/966545488488"><span class="fa fa-whatsapp"></span></a></li>
                                             </ul>
                                         </div>
                                         

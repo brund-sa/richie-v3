@@ -225,24 +225,6 @@
 		});
 	}
 	
-	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				username: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
-	
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
 		$(".scroll-to-target").on('click', function() {
