@@ -2105,7 +2105,8 @@ img{
 
 .what-we-do{
 	position:relative;
-	padding:100px 0px 0px;
+	padding:100px 0px 100px;
+	background: #f8f8f8;
 }
 
 .what-we-do .title-box{
