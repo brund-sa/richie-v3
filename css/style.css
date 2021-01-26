@@ -68,6 +68,22 @@ font-family: 'Merriweather', serif;*/
 	outline:none;
 }
 
+/* SCROLL BAR */
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #222;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #B58730;
+  outline: 1px solid #b5863092;
+}	
+
 /*** 
 
 ====================================================================
