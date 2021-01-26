@@ -4715,6 +4715,22 @@ img{
 	color:  #b88c33;
 }
 
+#submittedForm__ {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* GMAP STYLE */
 /* Set the size of the div element that contains the map */
 #map {
