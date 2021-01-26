@@ -538,20 +538,44 @@ locations in Saudi.
                     	<h2><strong style="color: #b78c34;">GET</strong> in Touch</h2>
                         <!--Contact Us Form-->
                         <div class="contact-us-form">
-                            <form method="post" action="mail.php" id="contact-form" novalidate="novalidate">
-                                <div class="form-group">
-                                    <input type="text" name="name" value="" placeholder="Your Name">
+                            <!-- flex-container start -->
+						<form action="mail.php" method="post" name="formobrsv" id="send_form" class="flex-container padding-top-90" data-aos="fade"
+						data-aos-delay="50"
+						data-aos-duration="900"
+						data-aos-easing="ease-in-out"
+						data-aos-once="false">
+							<!-- column start -->
+							<div class="eight-columns">
+								<div class="column-l-r-margin-10">
+									<input type="text" name="name" placeholder="Enter your name" id="first_name" required class="form-input js-pointer-small">
+								</div>
+							</div><!-- column end -->
+                            <!-- column start -->
+                            <div class="eight-columns">
+								<div class="column-l-r-margin-10">
+									<input type="email" name="email" placeholder="Enter your email address" id="email" required class="form-input js-pointer-small">
+								</div>
+                            </div><!-- column end -->
+							<!-- column start -->
+							<div class="four-columns">
+								<div class="column-l-r-margin-10">
+									<input type="text" name="number" placeholder="Enter your mobile number" id="number" required class="form-input js-pointer-small">
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="eight-columns">
+                                <div class="column-l-r-margin-10">
+								    <textarea name="message" placeholder="Enter your message" id="message" required class="form-input js-pointer-small"></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" value="" placeholder="Email Address">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" placeholder="Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="theme-btn btn-style-three">send message</button>
-                                </div>
-                            </form>
+                            </div><!-- column end -->
+							<!-- column start -->
+							<div class="eight-columns" style="padding: 5px 10px">
+                                <button id="send" class="border-btn js-pointer-large">
+									<span class="border-btn__inner">submit</span>
+									<span class="btn-wait">Wait</span>
+								</button>
+                            </div><!-- column end -->
+                        </form><!-- flex-container end -->
                         </div>
                     </div>
                 </div>
