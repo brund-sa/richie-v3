@@ -70,7 +70,7 @@ locations in Saudi.
                         document.getElementById('2').value=''; 
                         document.getElementById('3').value=''; 
                     }, function(error) {
-                        console.log('FAILED...', error);
+                        document.getElementById('submittedForm__err').style.display = "block";
                     });
             });
         }
@@ -579,7 +579,8 @@ locations in Saudi.
                                     <button type="submit" value="Send" class="theme-btn btn-style-three">send message</button>
                                 </div>
                             </form>
-                            <div id="submittedForm__">We will contact you shortly!</div>
+                            <div id="submittedForm__">We will contact you shortly! 😎</div>
+                            <div id="submittedForm__err">Please fill up the form correctly! 😭</div>
                         </div>
                     </div>
                 </div>
