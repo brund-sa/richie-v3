@@ -309,7 +309,7 @@ $("#send_form").on('submit', function(){
     var number = $("#number").val().trim();
     var message = $("#message").val().trim();
 
-    ({
+    $.ajax({
         url: './mail.php',
         type: 'POST',
         cache: false,
