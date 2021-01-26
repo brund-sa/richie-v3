@@ -304,17 +304,16 @@ const marker = new google.maps.Marker({
 
 =======================================================*/
 $("#send_form").on('submit', function(){
-    var first_name = $("#first_name").val().trim();
-    var last_name = $("#last_name").val().trim();
+    var name = $("#name").val().trim();
     var email = $("#email").val().trim();
     var number = $("#number").val().trim();
     var message = $("#message").val().trim();
 
     $.ajax({
-        url: '../mail.php',
+        url: './mail.php',
         type: 'POST',
         cache: false,
-        data: {'first_name': first_name, 'last_name': last_name, 'email': email, 'number': number, 'message': message},
+        data: {'name': name, 'email': email, 'number': number, 'message': message},
         dataType: 'html',
         beforeSend: function() {
             $("#send").addClass("js-active");
