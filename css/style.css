@@ -4821,6 +4821,10 @@ img{
 	text-align: center;
 }
 
+
+.location-handler img {
+	width: 100%;
+}
 .location-handler h3 {
 	color: #b88c34;
 	font-weight: 700;
