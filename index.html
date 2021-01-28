@@ -68,7 +68,6 @@ locations in Saudi.
                         document.getElementById('submittedForm__').style.display = "block";
                         document.getElementById('1').value=''; 
                         document.getElementById('2').value=''; 
-                        document.getElementById('3').value=''; 
                     }, function(error) {
                         document.getElementById('submittedForm__err').style.display = "block";
                     });
@@ -131,8 +130,18 @@ locations in Saudi.
                                 <li class="current"><a href="#">Home</a></li>
                                 <li><a href="about.html">About us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="works.html">Projects</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="dropdown"><a href="works.html">Projects</a>
+                                    <ul>
+                                        <li><a href="./projects/residential.html">Residential</a></li>
+                                        <li><a href="./projects/residential.html">Hospitality</a></li>
+                                        <li><a href="./projects/residential.html">Mix-use</a></li>
+                                        <li><a href="./projects/residential.html">Health</a></li>
+                                        <li><a href="./projects/residential.html">Sports</a></li>
+                                        <li><a href="./projects/residential.html">Commercial</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -164,13 +173,13 @@ locations in Saudi.
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h1>ORDINARY SPACE<br>INTO AN EXTRAORDINARY<br /><span><a href="#">OUR SERVICES</a></span></h1>  
+                    <h1>ORDINARY SPACE<br>INTO AN EXTRAORDINARY<br /><span><a href="services.html">OUR SERVICES</a></span></h1>  
                 </div>
                 <div class="swiper-slide">
-                    <h1>ORDINARY SPACE<br>INTO AN EXTRAORDINARY<br /><span><a href="#">OUR SERVICES</a></span></h1>  
+                    <h1>ORDINARY SPACE<br>INTO AN EXTRAORDINARY<br /><span><a href="services.html">OUR SERVICES</a></span></h1>  
                 </div>
                 <div class="swiper-slide">
-                    <h1>ORDINARY SPACE<br>INTO AN EXTRAORDINARY<br /><span><a href="#">OUR SERVICES</a></span></h1>  
+                    <h1>ORDINARY SPACE<br>INTO AN EXTRAORDINARY<br /><span><a href="services.html">OUR SERVICES</a></span></h1>  
                 </div>
             </div>
             <!-- Add Arrows -->
@@ -208,13 +217,15 @@ locations in Saudi.
                         </div>
                         <div class="text-content">
                             <p>RICHIE IDD is comfortable taking on commissions (Projects) ranging from a straightforward interior design refurbishment through to the complex architectural design, development and construction of substantial properties.</p>
-                            <ul>
+                                
+                            <div style="margin-top: 30px;"><a href="services.html" class="call__" style="margin-top: 15px;">OUR SERVICES</a></div>
+                            <!-- <ul>
                                 <li style="font-weight: 700;">What we can do for you:</li>
                                 <li>• Architecture</li>
                                 <li>• Interior Design</li>
                                 <li>• Project Management</li>
                                 <li>• Furniture & Accessories</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <!--Facts-->
                         <div class="facts">
@@ -299,12 +310,12 @@ locations in Saudi.
                 <div class="filters ">
                     <ul class="filter-tabs filter-btns">
                         <li class="filter active" data-role="button" data-filter="all">All</li>
-                        <li class="filter" data-role="button" data-filter=".residential">residetial</li>
+                        <li class="filter" data-role="button" data-filter=".residential">residential</li>
                         <li class="filter" data-role="button" data-filter=".commercial">commercial</li>
-                        <li class="filter" data-role="button" data-filter=".exteriors">hospitality</li>
-                        <li class="filter" data-role="button" data-filter=".renovations">mix-used</li>
-                        <li class="filter" data-role="button" data-filter=".exteriors">sports</li>
-                        <li class="filter" data-role="button" data-filter=".renovations">healtcare</li>
+                        <li class="filter" data-role="button" data-filter=".hospitality">hospitality</li>
+                        <li class="filter" data-role="button" data-filter=".mix">mix-used</li>
+                        <li class="filter" data-role="button" data-filter=".sports">sports</li>
+                        <li class="filter" data-role="button" data-filter=".health">healtcare</li>
                     </ul>
                 </div>
                 
@@ -326,15 +337,15 @@ locations in Saudi.
                         </div>
                     </div>
                     <!--Default Portfolio Item-->
-                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all commercial exteriors">
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all residential">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="images/gallery/2.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/projects/res-1/res1-1.webp" alt=""></figure>
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="overlay-content">
-                                            <h3><a href="portfolio-details.html">office desk</a></h3>
-                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                            <h3><a href="projects/residential-1.html">Private Villa Obhur</a></h3>
+                                            <h4 class="cat"><a href="projects/residential-1.html">residential</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -342,15 +353,15 @@ locations in Saudi.
                         </div>
                     </div>
                     <!--Default Portfolio Item-->
-                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all homes exteriors">
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all commercial">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="images/gallery/3.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/projects/res-1/res1-1.webp" alt=""></figure>
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="overlay-content">
-                                            <h3><a href="portfolio-details.html">office desk</a></h3>
-                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                            <h3><a href="projects/residential-1.html">Private Villa Obhur</a></h3>
+                                            <h4 class="cat"><a href="projects/residential-1.html">residential</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -358,15 +369,15 @@ locations in Saudi.
                         </div>
                     </div>
                     <!--Default Portfolio Item-->
-                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all commercial homes">
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all hospitality">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="images/gallery/4.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/projects/res-1/res1-1.webp" alt=""></figure>
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="overlay-content">
-                                            <h3><a href="portfolio-details.html">office desk</a></h3>
-                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                            <h3><a href="projects/residential-1.html">Private Villa Obhur</a></h3>
+                                            <h4 class="cat"><a href="projects/residential-1.html">residential</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -374,15 +385,15 @@ locations in Saudi.
                         </div>
                     </div>
                     <!--Default Portfolio Item-->
-                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all exteriors renovations">
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all mix">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="images/gallery/5.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/projects/res-1/res1-1.webp" alt=""></figure>
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="overlay-content">
-                                            <h3><a href="portfolio-details.html">office desk</a></h3>
-                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                            <h3><a href="projects/residential-1.html">Private Villa Obhur</a></h3>
+                                            <h4 class="cat"><a href="projects/residential-1.html">residential</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -390,21 +401,22 @@ locations in Saudi.
                         </div>
                     </div>
                     <!--Default Portfolio Item-->
-                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all renovations">
+                    <div class="default-portfolio-item col-md-4 col-sm-6 col-xs-12 mix mix_all sports">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="images/gallery/6.jpg" alt=""></figure>
+                                <figure class="image"><img src="images/projects/res-1/res1-1.webp" alt=""></figure>
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="overlay-content">
-                                            <h3><a href="portfolio-details.html">office desk</a></h3>
-                                            <h4 class="cat"><a href="portfolio-details.html">commercial</a></h4>
+                                            <h3><a href="projects/residential-1.html">Private Villa Obhur</a></h3>
+                                            <h4 class="cat"><a href="projects/residential-1.html">residential</a></h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="viewMore__"><a href="">VIEW MORE</a></div>
         	</div>    
@@ -505,14 +517,56 @@ locations in Saudi.
     </section>  
 
 
-    <section id="map__" style="padding: 70px 0;">
-        <a href="contact.html"><div class="auto-container">
+    <!-- <section id="map__" style="padding: 70px 0;">
+       <a href="contact.html"><div class="auto-container">
             
             <div id="img__container">
                 <img src="./images/RichieLocation-hold.jpg" alt="" >
                 <img src="./images/RichieLocation.jpg" alt="">
-            </div>
-        </div>    </a>  
+            </div> </div>
+            </a>
+    </section> -->
+
+    <section class="what-we-do" style="padding-top: 100px;">
+    	<div class="auto-container">
+        	<div class="row clearfix" style="margin-bottom:30px ;">
+                <div class="title-box">
+                    <h4 class="subtitle">Our locations</h4>
+                    <h2 class="wow fadeInUp">Strategic Thinking. Flawless Execution.<br/> Sustainable Solutions. </h2>
+                    <h4 class=" wow fadeInUp">Dolore magna aliq edamco laboris nisut aliquip.</h4> 
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="location-handler">
+                        <img src="./images/resource/saudi-img.png" />
+                        <h3>Saudi Arabia</h3>
+                        <div class="sub-info">
+                            <p>Jeddah | Riyadh | Jazan</p>
+                            <p><a href="https://goo.gl/maps/HaR6J5VfaviJn7NCA" target="_blank">7447 Al Ilham, Al Hamra Dist, Jeddah 23324</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp"  data-wow-delay="0.4s">
+                    <div class="location-handler">
+                        <img src="./images/resource/saudi-img.png" />
+                        <h3>Egypt</h3>
+                        <div class="sub-info">
+                            <p>Cairo</p>
+                            <p><a href="https://goo.gl/maps/gTH4BDgy7ZfF3si16" target="_blank">46 Gharb El Esstad St, 6th District, Nasr City, Cairo, Egypt</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp"data-wow-delay="0.6s">
+                    <div class="location-handler">
+                        <img src="./images/resource/saudi-img.png" />
+                        <h3>Dubai</h3>
+                        <div class="sub-info">
+                            <p>Dubai</p>
+                            <p><a href="https://goo.gl/maps/gTH4BDgy7ZfF3si16" target="_blank" >46 dubai street blah blah, whatever City, Dubai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>  
     </section>
 
     <div id="contact"></div>
@@ -532,10 +586,7 @@ locations in Saudi.
                                     <input type="text" name="user_name" value="" placeholder="Your Name" id="1" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="user_email" value="" placeholder="Email Address" id="2" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" placeholder="Message" id="3"></textarea>
+                                    <input type="number" name="user_number" value="" placeholder="Mobile/Phone No." id="2" required>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" value="Send" class="theme-btn btn-style-three">send message</button>

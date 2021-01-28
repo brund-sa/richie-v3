@@ -45,6 +45,36 @@ locations in Saudi.
 <meta name="twitter:image:alt" content="Richie IDD | Creative Architectural firm in Saudi Arabia" />
 
 <title>Richie IDD | Creative Architectural firm in Saudi Arabia</title>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_h8EAQCIpjtNfwBVDMwt1s');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_03ralcd', 'template_25f3vb7', this)
+                    .then(function() {
+                        document.getElementById('submittedForm__').style.display = "block";
+                        document.getElementById('1').value=''; 
+                        document.getElementById('2').value=''; 
+                        document.getElementById('3').value=''; 
+                    }, function(error) {
+                        document.getElementById('submittedForm__err').style.display = "block";
+                    });
+            });
+        }
+    </script>
 <!-- Stylesheets -->
 <link href="../css/bootstrap.css" rel="stylesheet" drefer>
 <link href="../css/style.css" rel="stylesheet" drefer>
@@ -101,8 +131,18 @@ locations in Saudi.
                                 <li><a href="../../index.html">Home</a></li>
                                 <li><a href="../../about.html">About us</a></li>
                                 <li><a href="../../services.html">Services</a></li>
-                                <li class="current"><a href="../../works.html">Projects</a></li>
-                                <li><a href="../../contact.html">Contact</a></li>
+                                <li class="dropdown current"><a href="#">Projects</a>
+                                    <ul>
+                                        <li><a href="residential.html">Residential</a></li>
+                                        <li><a href="hospitality.html">Hospitality</a></li>
+                                        <li><a href="mix.html">Mix-use</a></li>
+                                        <li><a href="health.html">Health</a></li>
+                                        <li><a href="sports.html">Sports</a></li>
+                                        <li><a href="commercial.html">Commercial</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../testimonial.html">Testimonials</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -210,7 +250,45 @@ locations in Saudi.
     </section>
     
 
-    
+    <div id="contact"></div>
+    <section class="contact-section">
+    	<div class="outer-container clearfix">
+        	
+            <!--Form Column-->
+            <div class="form-column">
+            	<div class="clearfix">
+                	<div class="inner">
+                    	<h2><strong style="color: #b78c34;">GET</strong> in Touch</h2>
+                        <!--Contact Us Form-->
+                        <div class="contact-us-form">
+                            <form id="contact-form" name="form__">
+                                <input type="hidden" name="contact_number">
+                                <div class="form-group">
+                                    <input type="text" name="user_name" value="" placeholder="Your Name" id="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="user_number" value="" placeholder="Mobile/Phone No." id="2" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" value="Send" class="theme-btn btn-style-three">send message</button>
+                                </div>
+                            </form>
+                            <div id="submittedForm__">We will contact you shortly! 😎</div>
+                            <div id="submittedForm__err">Please fill up the form correctly! 😭</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Map Column-->
+            <div class="map-column">
+            	<!--Map Canvas-->
+                <div id="map"></div>
+            </div>
+            
+        </div>
+    </section>
+
     <!--Main Footer-->
     <footer class="main-footer" style="background: url('./images/bg-ornament.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
     	<!--Widgets Section-->

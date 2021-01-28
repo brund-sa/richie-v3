@@ -131,8 +131,18 @@ locations in Saudi.
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About us</a></li>
                                 <li class="current"><a href="services.html">Services</a></li>
-                                <li><a href="works.html">Projects</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="dropdown"><a href="works.html">Projects</a>
+                                    <ul>
+                                        <li><a href="./projects/residential.html">Residential</a></li>
+                                        <li><a href="./projects/residential.html">Hospitality</a></li>
+                                        <li><a href="./projects/residential.html">Mix-use</a></li>
+                                        <li><a href="./projects/residential.html">Health</a></li>
+                                        <li><a href="./projects/residential.html">Sports</a></li>
+                                        <li><a href="./projects/residential.html">Commercial</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -316,15 +326,46 @@ locations in Saudi.
         </div>
     </section>  
 
-
-    <section id="map__" style="padding: 70px 0;">
-        <a href="contact.html"><div class="auto-container">
-            
-            <div id="img__container">
-                <img src="./images/RichieLocation-hold.jpg" alt="" >
-                <img src="./images/RichieLocation.jpg" alt="">
-            </div>
-        </div>    </a>  
+    <section class="what-we-do" style="padding-top: 100px;">
+    	<div class="auto-container">
+        	<div class="row clearfix" style="margin-bottom:30px ;">
+                <div class="title-box">
+                    <h4 class="subtitle">Our locations</h4>
+                    <h2 class="wow fadeInUp">Strategic Thinking. Flawless Execution.<br/> Sustainable Solutions. </h2>
+                    <h4 class=" wow fadeInUp">Dolore magna aliq edamco laboris nisut aliquip.</h4> 
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="location-handler">
+                        <img src="./images/resource/saudi-img.png" />
+                        <h3>Saudi Arabia</h3>
+                        <div class="sub-info">
+                            <p>Jeddah | Riyadh | Jazan</p>
+                            <p><a href="https://goo.gl/maps/HaR6J5VfaviJn7NCA" target="_blank">7447 Al Ilham, Al Hamra Dist, Jeddah 23324</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp"  data-wow-delay="0.4s">
+                    <div class="location-handler">
+                        <img src="./images/resource/saudi-img.png" />
+                        <h3>Egypt</h3>
+                        <div class="sub-info">
+                            <p>Cairo</p>
+                            <p><a href="https://goo.gl/maps/gTH4BDgy7ZfF3si16" target="_blank">46 Gharb El Esstad St, 6th District, Nasr City, Cairo, Egypt</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp"data-wow-delay="0.6s">
+                    <div class="location-handler">
+                        <img src="./images/resource/saudi-img.png" />
+                        <h3>Dubai</h3>
+                        <div class="sub-info">
+                            <p>Dubai</p>
+                            <p><a href="https://goo.gl/maps/gTH4BDgy7ZfF3si16" target="_blank" >46 dubai street blah blah, whatever City, Dubai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>  
     </section>
 
     
@@ -346,10 +387,7 @@ locations in Saudi.
                                     <input type="text" name="user_name" value="" placeholder="Your Name" id="1" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="user_email" value="" placeholder="Email Address" id="2" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" placeholder="Message" id="3"></textarea>
+                                    <input type="number" name="user_number" value="" placeholder="Mobile/Phone No." id="2" required>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" value="Send" class="theme-btn btn-style-three">send message</button>
@@ -360,6 +398,7 @@ locations in Saudi.
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             
             <!--Map Column-->
