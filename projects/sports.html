@@ -45,10 +45,6 @@ locations in Saudi.
 <meta name="twitter:image:alt" content="Richie IDD | Creative Architectural firm in Saudi Arabia" />
 
 <title>Richie IDD | Creative Architectural firm in Saudi Arabia</title>
-<script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -68,7 +64,6 @@ locations in Saudi.
                         document.getElementById('submittedForm__').style.display = "block";
                         document.getElementById('1').value=''; 
                         document.getElementById('2').value=''; 
-                        document.getElementById('3').value=''; 
                     }, function(error) {
                         document.getElementById('submittedForm__err').style.display = "block";
                     });
@@ -133,6 +128,7 @@ locations in Saudi.
                                 <li><a href="../../services.html">Services</a></li>
                                 <li class="dropdown current"><a href="#">Projects</a>
                                     <ul>
+                                        <li><a href="../../works.html">all</a></li>
                                         <li><a href="residential.html">Residential</a></li>
                                         <li><a href="hospitality.html">Hospitality</a></li>
                                         <li><a href="mix.html">Mix-use</a></li>
@@ -142,7 +138,12 @@ locations in Saudi.
                                     </ul>
                                 </li>
                                 <li><a href="../../testimonial.html">Testimonials</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li class="dropdown"><a href="#">Brochure</a>
+                                    <ul>
+                                        <li><a href="https://drive.google.com/uc?&id=1_WD1J9jH9eActYckG-bXJveqZ4iClBFY" target="_blank">View</a></li>
+                                        <li><a href="https://drive.google.com/uc?export=download&id=1_WD1J9jH9eActYckG-bXJveqZ4iClBFY">Download</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -169,7 +170,7 @@ locations in Saudi.
     
     
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(../images/bg-ornament.png);">
+    <section class="page-title" style="background-image:url(../images/resource/bg__2.png);">
     	<div class="auto-container">
         	<div class="content-box">
             	<h1>SPORTS</h1>
@@ -456,7 +457,7 @@ locations in Saudi.
                                     <button type="submit" value="Send" class="theme-btn btn-style-three">send message</button>
                                 </div>
                             </form>
-                            <div id="submittedForm__">We will contact you shortly! 😎</div>
+                            <div id="submittedForm__">Thank you for sharing your details,<br/> We will get in touch shortly.</div>
                             <div id="submittedForm__err">Please fill up the form correctly! 😭</div>
                         </div>
                     </div>
@@ -464,16 +465,17 @@ locations in Saudi.
             </div>
             
             <!--Map Column-->
-            <div class="map-column">
-            	<!--Map Canvas-->
-                <div id="map"></div>
+            <div class="map-column" style="background: url('../images/resource/contact.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            	<!--Map Canvas
+                <div id="map"></div>-->
             </div>
             
         </div>
     </section>
-
+    
     <!--Main Footer-->
-    <footer class="main-footer" style="background: url('./images/bg-ornament.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+    <footer class="main-footer" style="background: url('../images/resource/bg__.png'); background-size: contain; background-repeat: no-repeat; 
+    background-position: center right;">
     	<!--Widgets Section-->
     	<div class="widgets-section">
         	<div class="auto-container">

@@ -1129,7 +1129,7 @@ img{
 }
 
 .about-section .images-column .image-col:first-child .image-box{
-	margin-top:35px;	
+	/* margin-top:35px; */	
 }
 
 /*** 
@@ -4552,6 +4552,7 @@ img{
 .swiper-slide span a{
 	font-size: 2rem;
 	padding: 15px 25px;
+	border: 1px solid #B88C33;
 	background: #B88C33;
 	color: #fff;
 	transition: all 0.5s ease-in-out;
@@ -4559,11 +4560,11 @@ img{
 }
 
 .swiper-slide span a:hover{
-	border-radius: 10px;
 	font-size: 2rem;
 	padding: 15px 25px;
-	background: #fff;
+	background: rgba(255, 255, 255, 0);
 	color: #B88C33;
+	border: 1px solid #B88C33;
 }
 
 @keyframes fadeIn {
@@ -4724,7 +4725,7 @@ img{
 	text-transform: uppercase;
 	line-height: 3rem;
 	opacity: 0;
-	animation: fade 2s forwards 1s infinite;
+	animation: fade 1.7s forwards;
 }
 
 #submittedForm__err{
@@ -4844,9 +4845,42 @@ img{
 	color: #b88c34;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
+.hidden {
+	display: none;
+}
 
+.hov__ {
+    filter: grayscale(1);
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hov__:hover {
+    filter: grayscale(0);
+}
+
+.team-section .title-box h2 {
+	position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    color: #B88C33;
+    line-height: 1.2em;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-bottom: 35px;
+}
 
 /* GMAP STYLE */
 /* Set the size of the div element that contains the map */
