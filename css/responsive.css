@@ -172,8 +172,7 @@
 	.featured-content-section-two .content-column,
 	.featured-content-section-three .image-column,
 	.featured-content-section-three .content-column,
-	.contact-section .form-column,
-	.contact-section .map-column{
+	.contact-section .form-column{
 		width:100%;
 		position:relative;
 		left:0px;
