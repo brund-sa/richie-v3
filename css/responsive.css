@@ -205,6 +205,14 @@
 }
 
 @media only screen and (max-width: 767px){
+	.static {
+		position: absolute;
+		background: #B88C33;
+		width: 0%;
+		height: 0%;
+		z-index: 99;
+		transition: all 0.3s ease-in-out;
+	}
 	.preloader img {
 		width: 200px;
 		max-width: 100%;
