@@ -11,6 +11,11 @@ font-family: 'Merriweather', serif;*/
 @import url('owl.css');
 @import url('jquery.fancybox.css');
 
+@font-face {
+	font-family: "richieFont";
+	src: url("../fonts/helveticaAR.ttf") format("truetype"),
+		 url("../fonts/helveticaAR.ttf") format("truetype");
+  }
 /*** 
 
 ====================================================================
@@ -63,7 +68,7 @@ body {
 	background-repeat:no-repeat;
 	background-position:center top;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'richieFont', sans-serif;
 }
 
 a{
@@ -83,11 +88,12 @@ h1,h2,h3,h4,h5,h6 {
 	margin:0px;
 	background:none;
 	line-height:1.4em;
-	font-family: 'Work Sans', serif;
+	text-transform: uppercase !important;
+	font-family: 'richieFont', sans-serif;
 }
 
 input,button,select,textarea{
-	font-family: 'Work Sans', serif;
+	font-family: 'richieFont', serif;
 }
 
 p{
@@ -5080,7 +5086,7 @@ box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.21);
   h1 {
 	position: relative;
 	text-align: center;
-	font-family: 'Varela Round', serif;
+	font-family: 'richieFont', serif;
   }
   
   .button_container {
