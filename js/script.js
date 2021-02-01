@@ -284,7 +284,13 @@
 	  
     $('#toggle').click(function() {
         $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');  
-    });
+		$('#overlay').toggleClass('open'); 
+		if ( $('#overlay').hasClass("open")) {
+			$('html, body').css({ overflow: 'hidden'});
+		}else{
+			$('html, body').css({ overflow: 'auto'});   
+		}
+	});
+	
 
 })(window.jQuery);
