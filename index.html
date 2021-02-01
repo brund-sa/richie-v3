@@ -123,9 +123,9 @@ locations in Saudi.
                                     <li><a href="./">Home</a></li>
                                     <li><a href="./about.html">About us</a></li>
                                     <li><a href="./services.html">Services</a></li>
-                                    <li><a href="./works.htm">Projects</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="./testimonial.html">Testimonials</a></li>
+                                    <li><a href="./works.html">Projects</a></li>
+                                    <!-- <li><a href="#contact">Contact</a></li> -->
+                                    <!-- <li><a href="./testimonial.html">Testimonials</a></li> -->
                                     <li><a href="https://drive.google.com/uc?&id=1_WD1J9jH9eActYckG-bXJveqZ4iClBFY" target="_blank">Brochure</a></li>
                                 </ul>
                                 <!--Social Links-->
@@ -158,7 +158,7 @@ locations in Saudi.
                                         <li><a href="./projects/residential.html">Commercial</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <!-- <li><a href="testimonial.html">Testimonials</a></li> -->
                                 <li class="dropdown"><a href="#">Brochure</a>
                                     <ul>
                                         <li><a href="https://drive.google.com/uc?&id=1_WD1J9jH9eActYckG-bXJveqZ4iClBFY" target="_blank">View</a></li>
@@ -215,11 +215,41 @@ locations in Saudi.
     <div class="inner-info-box">
     	<div class="auto-container">
         	<div class="info-box">
-            	<ul class="clearfix">
-                	<li><a href="contact.html">Contact</a></li>
-                    <li><a href="tel:+966545488488">+966 545 488 488 </a></li>
-                    <!-- <li><a href="#">En</a> &ensp; <a href="#">Ar</a></li> -->
-                </ul>
+            	<div class="container_CTA">
+                    <div class="email" onclick="this.classList.add('expand')">
+                      <div class="from">
+                        <div class="from-contents">
+                          <div class="avatar me"></div>
+                          <div class="name">Contact Us</div>
+                        </div>
+                      </div>
+                      <div class="to">
+                        <div class="to-contents">
+                          <div class="top">
+                            <div class="avatar-large me"></div>
+                            <div class="name-large">RICHIE IDD</div>
+                            <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+                              <div class="x">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bottom">
+                            <div class="row__">
+                              <span class="fa fa-whatsapp twitter"></span>
+                              <div class="link"><a href="https://wa.me/966545488488">Whatsapp us</a></div>
+                            </div>
+                            <div class="row__">
+                                <span class="fa fa-phone twitter"></span>
+                              <div class="link"><a href="tel:+966545488488">Call us now</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
             </div>
         </div>
     </div>
@@ -276,7 +306,6 @@ locations in Saudi.
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section> 
@@ -315,29 +344,16 @@ locations in Saudi.
     
     <div id="project"></div>
     <!--Projects Section-->
-    <section class="projects-section wow fadeInUp">
+    <section class="projects-section wow fadeInUp" style="padding: 0px 0px 70px;">
         <div class="auto-container">
         	
             <!--Heading Title-->
             <div class="sec-title-one">
-            	<h3 class="subtitle">Featured Projects</h3>
-                <h2>Latest Projects</h2>
+            	<h3 class="subtitle">our works</h3>
+                <h2>Featured Projects</h2>
             </div>
             
             <div class="mixitup-gallery">
-            	
-                <!--Filter-->
-                <div class="filters ">
-                    <ul class="filter-tabs filter-btns">
-                        <li class="filter active" data-role="button" data-filter="all">All</li>
-                        <li class="filter" data-role="button" data-filter=".residential">residential</li>
-                        <li class="filter" data-role="button" data-filter=".commercial">commercial</li>
-                        <li class="filter" data-role="button" data-filter=".hospitality">hospitality</li>
-                        <li class="filter" data-role="button" data-filter=".mix">mix-used</li>
-                        <li class="filter" data-role="button" data-filter=".sports">sports</li>
-                        <li class="filter" data-role="button" data-filter=".health">healtcare</li>
-                    </ul>
-                </div>
                 
                 <div class="filter-list row clearfix">
                     <!--Default Portfolio Item-->
@@ -438,7 +454,7 @@ locations in Saudi.
                     </div>
                     
                 </div>
-                <div class="viewMore__"><a href="works.html">VIEW MORE</a></div>
+                <div class="viewMore__"><a href="works.html">VIEW ALL</a></div>
         	</div>    
         </div>
     </section>
@@ -451,7 +467,6 @@ locations in Saudi.
                 <div class="content-column pull-right col-md-6 col-sm-12 col-xs-12">
                 	<div class="inner">
                     	<h2 style="color: #B88C33;">About us</h2>
-                        <h3>Who we are</h3>
                         <div class="text wow fadeInUp" data-wow-delay=".2s">RICHIE IDD is a dynamic, innovative, and one of the biggest and most influential architectural firms in Saudi Arabia. 
 
                             Our painstaking attention to detail from the earliest concept stage right through to the completion of a project consistently provides our clients with projects and homes that exceed their expectations. 
@@ -551,10 +566,10 @@ locations in Saudi.
     	<div class="auto-container">
         	<div class="row clearfix" style="margin-bottom:30px ;">
                 <div class="title-box">
-                    <h2 class="wow fadeInUp">Our locations </h2>
+                    <h2 class="wow fadeInUp">Offices </h2>
                     <!-- <h4 class=" wow fadeInUp">Areas we cover.</h4>  -->
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp location__" data-wow-delay="0.2s">
                     <div class="location-handler">
                         <img src="./images/resource/saudi-thumb.jpg" />
                         <h3>Saudi Arabia</h3>
@@ -570,7 +585,7 @@ locations in Saudi.
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp"  data-wow-delay="0.4s">
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp location__"  data-wow-delay="0.4s">
                     <div class="location-handler">
                         <img src="./images/resource/rgyptt-humb.jpg" />
                         <h3>Egypt</h3>
@@ -580,7 +595,7 @@ locations in Saudi.
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp"data-wow-delay="0.6s">
+                <div class="col-md-4 col-sm-12 col-xs-12 saudi__ wow fadeInUp location__"data-wow-delay="0.6s">
                     <div class="location-handler">
                         <img src="./images/resource/dubai-thumb.jpg" />
                         <h3>Dubai</h3>
@@ -615,6 +630,7 @@ locations in Saudi.
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" value="Send" class="theme-btn btn-style-three">send message</button>
+                                    <a href="tel:+966545488488" class="call__">CALL US NOW! <span class="fa fa-phone" aria-hidden="true"></span></a>
                                 </div>
                             </form>
                             <div id="submittedForm__">Thank you for sharing your details,<br/> We will get in touch shortly.</div>
@@ -718,7 +734,7 @@ locations in Saudi.
                                     </div>
                                     <!--Social Links-->
                                     <div class="social-links">
-                                        <h2>Branches</h2>
+                                        <h2>Offices</h2>
                                         <ul class="clearfix">
                                             <li style="margin-right: 0px;">Riyadh |</li>
                                             <li style="margin-right: 0px;">Jeddah |</li>
@@ -771,13 +787,6 @@ locations in Saudi.
 <script src="js/appear.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/script.js"></script>
-
-<script>
-    $('#toggle').click(function() {
-        $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');
-    });
-</script>
 
 </body>
 </html>
