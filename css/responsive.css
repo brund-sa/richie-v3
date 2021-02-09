@@ -206,6 +206,12 @@
 }
 
 @media only screen and (max-width: 767px){
+	div#sectors {
+		margin-bottom: 0 !important;
+	}
+	#services__image {
+		display: none;
+	}
 	.location__ {
 		padding: 25px;
 	}
