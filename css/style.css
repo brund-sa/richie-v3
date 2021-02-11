@@ -1408,7 +1408,7 @@ img{
 	display:table;
 	padding:15px;
 	vertical-align:middle;
-	background:rgb(184 140 51);
+	background:rgb(184 140 51 / 60%);
 }
 
 .default-portfolio-item .overlay-content{
@@ -2007,6 +2007,7 @@ img{
 	margin-bottom:10px;
 }
 
+
 .services-section .title-box h4{
 	position:relative;
 	font-size:18px;
@@ -2107,8 +2108,8 @@ img{
 	width:50px;
 	border-bottom:2px solid #000000;	
 }
-
-.what-we-do .title-box .subtitle{
+.what-we-do .title-box .subtitle,
+.projects-section .title-box .subtitle{
 	position:relative;
 	display:inline-block;
 	padding:0px 70px;
@@ -2119,7 +2120,8 @@ img{
 	margin-bottom:15px;	
 }
 
-.what-we-do .title-box .subtitle:before{
+.what-we-do .title-box .subtitle:before,
+.projects-section .title-box .subtitle:before{
 	content:'';
 	position:absolute;
 	left:0px;
@@ -2129,7 +2131,8 @@ img{
 	border-bottom:1px solid #dddddd;	
 }
 
-.what-we-do .title-box .subtitle:after{
+.what-we-do .title-box .subtitle:after,
+.projects-section .title-box .subtitle:after{
 	content:'';
 	position:absolute;
 	right:0px;
@@ -2139,7 +2142,8 @@ img{
 	border-bottom:1px solid #dddddd;	
 }
 
-.what-we-do .title-box h2{
+.what-we-do .title-box h2,
+.projects-section .title-box h2{
 	position:relative;
 	font-size:36px;
 	font-weight:700;
@@ -2148,7 +2152,8 @@ img{
 	margin-bottom:10px;
 }
 
-.what-we-do .title-box h4{
+.what-we-do .title-box h4,
+.projects-section .title-box h4{
 	position:relative;
 	font-size:16px;
 	font-weight:500;
@@ -5240,18 +5245,16 @@ div#toggle {
     font-size: 1.5rem;
 	font-weight: 700;
 	text-transform: uppercase;
-    background: #b88c33cb;
-    width: 100%;
+    background: #b88c33;
+    width: 82%;
     margin: 0 auto;
     position: relative;
-	/* top: -50px; */
-	color: #fff;
-	top: 0;
+    color: #fff;
+    top: -35px;
     transition: all 0.5s ease-in-out;
 }  
 .sector__container:hover .sector__text{
-	top: -20px;/* 
-	width: 85%; */
+	top: -50px;
     background: #b88c33;
 }
 
@@ -5274,6 +5277,17 @@ figure.image-box.wow.fadeInLeft.animated:before {
     height: 500px;
     position: absolute;
     left: 75%;
+    top: -50px;
+    z-index: -1;
+}
+
+figure.image-box.wow.fadeInRight.animated:before {
+    content: "";
+    border: 10px solid #b78c34;
+    width: 830px;
+    height: 500px;
+    position: absolute;
+    right: 75%;
     top: -50px;
     z-index: -1;
 }
@@ -5365,8 +5379,12 @@ figure.image-box.wow.fadeInLeft.animated:before {
   .email:not(.expand):hover {
 	background: #000000;
 	}
+  
   .from {
     position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -5390,20 +5408,24 @@ figure.image-box.wow.fadeInLeft.animated:before {
   }
   .avatar {
 	border-radius: 12px;
-	height: 30px;
-	left: 0px;
-	position: relative;
-	top: 0px;
-	width: 30px;
+	height: 120px;
+	left: 30%;
+	opacity: 0.1;
+	position: absolute;
+	top: -49px;
+	/* z-index: -1; */
+	width: 120px;
 	}
   .name {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	font-weight: 500;
 	color: #fff;
+	text-align: center;
 	line-height: 3rem;
-	margin-left: 10px;
-  }
+	/* margin-left: 10px; */
+	width: 100%;
+	}
   .top {
 	background: #b88c33;
 	display: flex;
