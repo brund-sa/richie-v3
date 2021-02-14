@@ -302,7 +302,7 @@ const marker = new google.maps.Marker({
 
                         LEGAL ACTION
 
-=======================================================*/
+=======================================================
 var message="Please do not download the images.";
         
         function clickIE6(){
@@ -344,7 +344,7 @@ var message="Please do not download the images.";
         
         }
         
-        document.oncontextmenu=new Function("return false")
+        document.oncontextmenu=new Function("return false")*/
 
 
 
