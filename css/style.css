@@ -4507,7 +4507,7 @@ img{
 	align-items: center;
 }
 .swiper-slide h1 {
-	font-family: 'richie_font', sans-serif;
+	font-family: 'richieFont', sans-serif;
 	font-weight: 700;
 	text-align: center;
 	font-size: 5rem;
@@ -4658,28 +4658,44 @@ img{
 
 .viewMore__ a {
 	padding: 15px 25px;
-	background: #B78C33;
+    background: url(../images/buttonBG.png), #b88c33;
+	background-size: contain;
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
 	color: #ffffff;
 	transition: all 0.5s ease-in-out;
 }
 
 .viewMore__ a:hover {
 	border: 1px solid #B78C33;
-	background: transparent;
+    background: url(../images/buttonBG.png), #ffffff;
+	background-size: contain;
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
 	color: #B78C33;
 }
 
 .call__ {
 	padding: 7px 25px;
     color: #fff;
-    background: #b88c33;
+    background: url(../images/buttonBG.png), #b88c33;
+	background-size: contain;
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
     border: 2px solid #b88c33;
 }
 
 .call__:hover {
 	border: 2px solid  #b88c33;
-	background: transparent;
+    background: url(../images/buttonBG.png), #ffffff;
+	background-size: contain;
+	background-position: center center;
+	background-size: 65%;
+	background-repeat: no-repeat;
 	color:  #b88c33;
 }
 
@@ -5292,19 +5308,6 @@ figure.image-box.wow.fadeInRight.animated:before {
     top: -50px;
     z-index: -1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
