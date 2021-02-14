@@ -206,6 +206,12 @@
 }
 
 @media only screen and (max-width: 767px){
+	.sponsors-section .sponsors-list li img {
+		filter: grayscale(0);
+	}
+	.hov__ {
+		filter: grayscale(0);
+	}
 	div#sectors {
 		margin-bottom: 0 !important;
 	}
