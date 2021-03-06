@@ -5564,3 +5564,81 @@ figure.image-box.wow.fadeInRight.animated:before {
   .expand .to-contents {
 	transform: scale(1);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  #bg- {
+    width: 90vw;
+    margin: 0 auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    -webkit-animation: swap-image 10s infinite ease-in-out;
+    animation: swap-image 10s infinite ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#bg- h1 {
+	display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 5rem;
+    font-weight: 900;
+	color:#fff
+}
+
+@media screen and (max-width: 900px) {
+	#bg- h1 {
+		font-size: 3.5rem;
+	}
+
+	#bg- {
+		width: 100vw;
+	}
+}
+
+@keyframes swap-image {
+    0% {
+        opacity: 1;
+        background-color: #000000;
+        background: url("../images/projects/residential-thumb-2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    40% {
+        opacity: 1;
+        background-color: #000000;
+        background: url("../images/projects/hospi-1/1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 60% {
+        opacity: 1;
+        background-color: #000000;
+        background: url("../images/main-slider/slider_interior1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }  100% {
+        opacity: 1;
+        background-color: #000000;
+        background: url("../images/projects/residential-thumb-2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+  }
+
